@@ -1,0 +1,24 @@
+server:
+  port: 8040
+spring:
+  data:
+    mongodb:
+      username: chaimaouazzan
+      password: chaimaouazzan
+      host: localhost
+      port: 27018
+      database: commande
+      authentication-database: admin
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping:
+
+
+application:
+  config:
+    produit-url: http://localhost:8222/orders

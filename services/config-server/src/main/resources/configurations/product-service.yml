@@ -1,0 +1,14 @@
+server:
+  port: 8040
+spring:
+  data:
+    mongodb:
+      username: chaimaouazzan
+      password: chaimaouazzan
+      host: localhost
+      port: 27018
+      database: product
+      authentication-database: admin
+
+application:
+  config:
